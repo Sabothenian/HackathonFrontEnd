@@ -15,5 +15,5 @@ angular.module('supportAnalyticsApp')
       'Karma'
     ];
 
-        console.log($scope.chartData);
+
   });
