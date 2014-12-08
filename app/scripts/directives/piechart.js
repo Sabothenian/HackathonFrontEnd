@@ -9,10 +9,15 @@
 angular.module('supportAnalyticsApp')
   .directive('pieChart', function () {
     return {
-      template: '<div></div>',
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the pieChart directive');
-      }
+        templateUrl: 'views/pieChart.html',
+        restrict: 'E',
+        controller: 'PiechartCtrl',
+        replace: true,
+        scope: {
+            chartData: '='
+        }/*,
+        link: function postLink(scope, element, attrs) {
+            //element.text('this is the pieChart directive');
+        }*/
     };
   });
