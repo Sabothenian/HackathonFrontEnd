@@ -23,6 +23,14 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/team', {
+        templateUrl: 'views/team.html',
+        controller: 'TeamCtrl'
+      })
+      .when('/product', {
+            templateUrl: 'views/product.html',
+            controller: 'ProductCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
