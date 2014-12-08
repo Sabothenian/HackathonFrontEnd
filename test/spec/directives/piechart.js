@@ -15,6 +15,6 @@ describe('Directive: pieChart', function () {
   it('should make hidden element visible', inject(function ($compile) {
     element = angular.element('<pie-chart></pie-chart>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the pieChart directive');
+    expect(element.text()).toBe('Hello pie');
   }));
 });
